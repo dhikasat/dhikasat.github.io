@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./dist/output.css" rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <script>document.documentElement.classList.add('js')</script>
+    <title>Portfolio Dhikasat</title>
+  </head>
+  <body>
+    <div class="">
+      <header class="w-full h-16">
+        <div
+          class="container px-4 md:px-2 h-full mx-auto flex justify-between items-center font-semibold"
+        >
+          <a href="#" class="text-4xl font-bold">Dhikasat's Portfolio</a>
+          <!-- Menu links here -->
+          <ul
+            id="menu"
+            class="hidden fixed top-0 right-0 px-10 py-16 bg-black z-50 md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6"
+          >
+            <li class="md:hidden z-90 fixed top-4 right-6">
+              <a
+                href="javascript:void(0)"
+                class="text-right text-white text-4xl"
+                onclick="toggleMenu()"
+                >&times;</a
+              >
+            </li>
+            <li
+              class="py-2 bg-black text-white text-center font-bold mr:flex hover:bg-blue-800 md:flex hover:text-white"
+            >
+              <a href="#about" class="md:px-8 lg:px-12">About</a>
+            </li>
+            <li
+              class="py-2 bg-black text-white text-center font-bold mr:flex hover:bg-blue-800 md:flex hover:text-white"
+            >
+              <a href="#experience" class="md:px-8 lg:px-12">Experiences</a>
+            </li>
+            <li
+              class="py-2 bg-black text-white text-center font-bold mr:flex hover:bg-blue-800 md:flex hover:text-white"
+            >
+              <a href="#works" class="md:px-8 lg:px-12">Portfolio</a>
+            </li>
+            <li
+              class="py-2 bg-black text-white text-center font-bold mr:flex hover:bg-blue-800 md:flex hover:text-white"
+            >
+              <a href="#contact" class="md:px-8 lg:px-12">Contact</a>
+            </li>
+          </ul>
+          <!-- This is used to open the menu on mobile devices -->
+          <div class="flex items-center md:hidden">
+            <button
+              class="text-4xl font-semibold opacity-70 hover:opacity-100 duration-300"
+              onclick="toggleMenu()"
+            >
+              &#9776;
+            </button>
+          </div>
+        </div>
+    </div>
+  </header>
+      <div
+        id="about"
+        class="flex flex-row justify-center flex-wrap xl:flex my-12 sm:my-24 mx-12"
+      >
+        <img src="./img/2.png" class="w-full sm:h-[600px] sm:w-96 py-12" />
+        <div class="w-96 md:w-1/2 md:pl-8 lg:pl-20 my-12 sm:md-0">
+          <h1 class="font-bold text-2xl md:text-3xl lg:text-4xl">
+            Hi, It's me Dhika
+          </h1>
+          <h2 class="font-bold sm:text-lg lg:text-xl sm:py-1 py-1 lg:py-4">
+            College Student of <a
+            class="text-blue-800 duration-300" href="https://ub.ac.id/">Universitas
+            Brawijaya</a>
+          </h2>
+          <h4 class="font-sans">215150607111012</h4>
+          <p class="py-2 md:py-8 lg:py-10 text-md lg:text-lg">
+            <b
+              >What's Up! I'm Andhika Satria, a Information
+              Technology Education Student at Universitas
+              Brawijaya.</b
+            >
+            <br />
+            <span id="dots">...</span>
+                <span id="more" class="hidden">Okay, let me tell a little story about myself in Indonesian. Jadi,
+                  aku adalah warga lokal yang sudah menetap 20 tahun di Malang. Hobiku
+                  bermain game, bermain musik, membaca buku, dan berolahraga.<br /><br />
+                  Berorganisasi di dunia perkuliahan adalah salah satu wadah untuk
+                  aku eksplor akan hal-hal baru dan belajar untuk tetap konsisten
+                  dengan apa yang telah aku pilih. <br /><br />
+                  So, here I am and stay tuned on this website. Thank You!
+                  <span>
+          </p>
+
+          <div class="mt-8 flex flex-wrap gap-4">
+            <button onclick="toggleText()" id="rdm" 
+              class="bg-blue-800 py-2 px-4 text-white font-bold mr-6 sm\:mr-12 mt-4 sm:mt-0 hover:bg-black md:flex hover:text-white"
+            >
+              Read More
+            </button>
+            <button
+              class="mt-4 sm:mt-0 border border-blue-800 py-2 px-4 text-blue-800 font-bold hover:bg-black hover:text-white"
+            > <a href="https://drive.google.com/file/d/1HUKlRBXkwpNMKOGWMJ5XE9VHcRsioueH/view?usp=share_link">Download CV</a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    <div
+      class="text-center text-white py-24"
+      id="quotes"
+    >
+      <h1 class="w-1/2 m-auto text-2xl">
+        <hr> 
+        “Knowing yourself is the beginning of all wisdom” <hr>
+      </h1>
+    </div>
+    <div class="bg-gray-200" id="experience">
+      <h1 class="pt-12 ml-12 sm:ml-24 font-bold text-4xl">Experiences</h1>
+      <div class="justify-center py-16 flex flex-wrap">
+
+        <div
+          class="card bg-black w-96 sm:w-60 sm:h-96 sm:mr-12 mb-12 text-white p-5 hover:bg-blue-800 transition duration-0 hover:duration-200"
+        >
+          <h4>November 2021 - Now</h4>
+          <h1 class="text-xl font-bold pt-8">Ketua Angkatan</h1>
+          <h2>PTI 2021</h2>
+          <div class="pt-10 px-4">
+            <ul style="list-style-type: disc">
+              <li class="text-sm">Mengoordinir 70+ mahasiswa PTI angkatan 2021</li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="card bg-black w-96 sm:w-60 sm:h-96 sm:mr-12 mb-12 text-white p-5 hover:bg-blue-800 transition duration-0 hover:duration-200"
+        >
+          <h4>Februari 2022 - Now</h4>
+          <h1 class="text-xl font-bold pt-8"><a href="https://bemfilkom.ub.ac.id/">STAFF PSDM</a></h1>
+          <h2><a href="https://bemfilkom.ub.ac.id/">BEM ARYAKARSA 2022</a></h2>
+          <div class="pt-10 px-4">
+            <ul style="list-style-type: disc">
+              <li class="text-sm">Ketua Pelaksana Lokakarya Kaderisasi 4.0</li>
+              <br />
+              <li class="text-sm">PJ PKKMB & Startup Academy 2022</li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="card bg-black w-96 sm:w-60 sm:h-96 sm:mr-12 mb-12 text-white p-5 hover:bg-blue-800 transition duration-0 hover:duration-200"
+        >
+          <h4>Februari 2022 - Now</h4>
+          <h1 class="text-xl font-bold pt-8"><a href="https://instagram.com/biosfilkomub?igshid=YmMyMTA2M2Y=">STAFF BASKET</a></h1>
+          <h2><a href="https://instagram.com/biosfilkomub?igshid=YmMyMTA2M2Y=">BIOS JAIKARA 2022</a></h2>
+          <div class="pt-10 px-4">
+            <ul style="list-style-type: disc">
+              <li class="text-sm">Melakukan pemberkasan terkait surat menyurat yang diperlukan untuk kegiatan perlombaan</li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="card bg-black w-96 sm:w-60 sm:h-96 sm:mr-12 mb-12 text-white p-5 hover:bg-blue-800 transition duration-0 hover:duration-200"
+        >
+          <h4>Februari 2022 - Now</h4>
+          <h1 class="text-xl font-bold pt-8"><a href="https://instagram.com/homebandbios?igshid=YmMyMTA2M2Y=">TALENT</a></h1>
+          <h2><a href="https://instagram.com/homebandbios?igshid=YmMyMTA2M2Y=">HOMEBAND BIOS 2022</a></h2>
+          <div class="pt-10 px-4">
+            <ul style="list-style-type: disc">
+              <li class="text-sm">Mengembangkan bakat dan minat dalam bermain musik serta menjadi salah satu personil dari <a href="https://instagram.com/algorhythmofc?igshid=YmMyMTA2M2Y=">Algorhythm Band</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="card bg-gray-400 w-96 sm:w-60 sm:h-96 mb-12 text-black p-5 transition duration-0 hover:duration-200"
+        >
+        <h1 class="text-2xl font-bold ">RIWAYAT PENDIDIKAN</h1> <hr><hr><hr><hr>
+          <h1 class="text-xl font-bold pt-8"><a class="hover:text-white" href="https://smpn1-mlg.sch.id/">SMPN 1 Malang</a></h1> <br>
+          <div class="px-4 font-semibold">
+            <ul style="list-style-type: disc">
+              <li class="text-sm"><a class="hover:text-white" href="https://instagram.com/eksawigraha?igshid=YmMyMTA2M2Y=">OSIS/MPK EKSAWIGRAHA</a></li>
+            </ul>
+          </div>
+          <h1 class="text-xl font-bold pt-8"><a class="hover:text-white" href="https://sman4malang.sch.id/">SMAN 4 Malang</a></h1> <br>
+          <div class=" text-xl px-4 font-semibold">
+            <ul style="list-style-type: disc">
+              <li class="text-sm"><a class="hover:text-white" href="https://instagram.com/dimasdiajengstetsa?igshid=YmMyMTA2M2Y=">DIMAS DIAJENG STETSA</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2 class="pt-12 ml-12 sm:ml-24 font-bold text-4xl">
+        Other Experiences
+        </h2>
+        <div>
+        <ul class="pt-8 ml-12 sm:ml-24 sm:/mr- lg:py-4 font-semibold">
+            <ul style="list-style-type: disc"> 
+              <li class="text-xl">Wakil Ketua Divisi Acara <a class="text-blue-800 hover:text-white" href="https://instagram.com/pk2maba_filkom?igshid=YmMyMTA2M2Y=">PKKMB & Startup Academy 2022</a></li>
+              <li class="text-xl">Wakil Ketua Divisi Acara <a class="text-blue-800 hover:text-white" href="https://instagram.com/infinite.ub?igshid=YmMyMTA2M2Y=">INFINITE 2022</a></li>
+              <li class="text-xl">Ketua Divisi Korlap <a class="text-blue-800 hover:text-white" href="https://instagram.com/genesispti_ub?igshid=YmMyMTA2M2Y=">GENESIS 8.0</a></li>
+              <li class="text-xl">MC Preneurs Talk #2</li>
+              <li class="text-xl">MC FILKOM Virtual Open House 2022</li>
+              <li class="text-xl">MC LKMM-TM 2022</li>
+              <li class="text-xl">Moderator LKMM-Pra TD GENESIS 8.0</li>
+              <li class="text-xl">Moderator Social Campaign 2022</li> <hr><hr><hr><hr><hr><hr>
+            </ul>
+          </ul> 
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white" id="works">
+      <h1 class="pt-12 ml-12 sm:ml-24 font-bold text-4xl">Portfolio</h1>
+      <div class="mx-8 sm:mx-24 py-16">
+        <div>
+          <h2 class="font-semibold sm:text-lg lg:text-xl sm:py-1 py-1 lg:py-4">
+            Landing Page Website Interface Design for Personal Profiles <hr><hr>
+          </h2>
+          <img src="./img/port1.png" />
+        </div>
+        <br /><br />
+        <div>
+          <h2 class="font-semibold sm:text-lg lg:text-xl sm:py-1 py-1 lg:py-4">
+            Redesign Website LTMPT <hr><hr>
+          </h2>
+          <img src="./img/port2.png" />
+        </div>
+      </div>
+    </div>
+    <div class="bg-blue-800 p-24">
+      <h1 class="text-white pb-12 text-4xl">Achievement</h1>
+      <div class="bg-white flex items-center mx-auto py-4 mb-4">
+        <img src="./img/Vector.png" class="w-12 h-12 mx-8" />
+        <div>
+          <h1 class="font-bold">Completer</h1>
+          <h class="font-semibold">Kumon Mathematics</h>
+          <h3 class="font-semibold">2020</h3>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-gray-200 w-full py-12" id="contact">
+      <h1 class="text-2xl font-bold text-center">Get in Touch &hearts;</h1>
+      <div class="flex justify-center py-4">
+        <a href="https://www.instagram.com/dhikasat_/"
+          ><i class="bi bi-instagram text-xl px-2"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/andhika-satria-7a87341a6/"
+          ><i class="bi bi-linkedin text-xl px-2"></i
+        ></a>
+        <a href="https://www.youtube.com/channel/UCzOz7B4KXHGoaKff8am37ag"
+          ><i class="bi bi-youtube text-xl px-2"></i
+        ></a>
+        <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=dhikasat@gmail.com"
+          ><i class="bi bi-envelope text-xl px-2"></i
+        ></a>
+      </div>
+      <div class="pt-8">
+        <p class="text-center text-sm font-semibold">
+          &copy Copyright 2022, Dhikasat 
+        </p>
+      </div>
+    </footer>
+    <script>
+      var menu = document.getElementById("menu");
+      function toggleMenu() {
+        menu.classList.toggle("hidden");
+        menu.classList.toggle("w-full");
+        menu.classList.toggle("h-screen");
+      }
+      function toggleText() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var button = document.getElementById("rdm");
+
+        if (dots.classList.contains("hidden")) {
+            dots.classList.remove("hidden");
+            moreText.classList.add("hidden");
+            button.innerHTML = "Read More";
+        } else {
+            dots.classList.add("hidden");
+            moreText.classList.remove("hidden");
+            button.innerHTML = "Back";
+        }
+    }
+    </script>
+    <script src="https://unpkg.com/taos@1.0.2/dist/taos.js"></script>
+  </body>
+</html>
