@@ -14,3 +14,23 @@ module.exports = {
   },
   plugins: [],
 }
+
+module.exports = {
+  plugins: [
+    require('taos/plugin')
+  ],
+}
+
+module.exports = {
+  safelist: [
+    '!duration-0',
+    '!delay-0',
+    'html.js :where([class*="taos:"]:not(.taos-init))'
+  ]
+}
+
+module.exports = {
+  content: {
+    transform: (content) => content.replace(/taos:/g, ''),
+  },
+}
