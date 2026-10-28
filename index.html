@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
     <meta name="description" content="Portfolio of Andhika Satria - Computer Science Fresh Graduate from Universitas Brawijaya, specializing in Web Development, Data Science & Business Intelligence." />
     <meta property="og:title" content="Dhikasat's Portfolio" />
     <meta property="og:description" content="Portfolio of Andhika Satria - Computer Science Fresh Graduate from Universitas Brawijaya" />
@@ -22,9 +23,9 @@
     <script>document.documentElement.classList.add('js')</script>
     <title>Dhikasat's Portfolio</title>
   </head>
-  <body>
+  <body class="bg-white">
     <div class="">
-      <header class="w-full h-16">
+      <header class="w-full h-16 border-b">
         <div
           class="container px-4 md:px-2 h-full mx-auto flex justify-between items-center font-semibold"
         >
@@ -67,9 +68,9 @@
         </div>
       </header>
 
-      <section id="about" class="flex flex-row justify-center flex-wrap xl:flex my-12 sm:my-24 mx-12">
-        <img src="./img/livin.jpg" class="w-full sm:h-[600px] sm:w-96 py-12" alt="Profile photo" />
-        <div class="w-96 md:w-1/2 md:pl-8 lg:pl-20 my-12 sm:md-0">
+      <section id="about" class="flex flex-row justify-center flex-wrap xl:flex my-20 sm:my-36 mx-auto">
+        <img src="./img/livin.jpg" class="w-full sm:h-[600px] sm:w-96 py-12 shadow-lg" alt="Profile photo" />
+        <div class="w-96 md:w-1/2 md:pl-8 lg:pl-20 my-16 sm:my-0">
           <h1 class="font-bold text-2xl md:text-3xl lg:text-4xl">
             Hi, It's me Dhika
           </h1>
@@ -85,12 +86,12 @@
             So, here I am and stay tuned on this website. Thank You!</span>
           </p>
 
-          <div class="mt-8 flex flex-wrap gap-4">
-            <button onclick="toggleText()" id="rdm" class="bg-blue-800 py-2 px-4 text-white font-bold mr-6 sm:mr-12 mt-4 sm:mt-0 hover:bg-black md:flex hover:text-white">
+          <div class="mt-10 flex flex-wrap gap-4">
+            <button onclick="toggleText()" id="rdm" class="bg-blue-800 py-3 px-6 text-white font-bold mr-8 sm:mr-16 mt-4 sm:mt-0 hover:bg-black md:flex hover:text-white">
               Read More
             </button>
             <a href="https://drive.google.com/file/d/1IJ3klv9w085SubFYjaJHruE1tAw74U24/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-              <button class="mt-4 sm:mt-0 border border-blue-800 py-2 px-4 text-blue-800 font-bold hover:bg-black hover:text-white">
+              <button class="mt-4 sm:mt-0 border border-blue-800 py-3 px-6 text-blue-800 font-bold hover:bg-black hover:text-white">
                 Curriculum Vitae
               </button>
             </a>
@@ -99,7 +100,7 @@
       </section>
 
       <div
-        class="text-center text-white py-24 delay-[300ms] duration-[600ms] taos:[transform:translate3d(0,200px,0)_scale(0.6)] taos:opacity-0" data-taos-offset="300"
+        class="text-center text-white py-28 delay-[300ms] duration-[600ms] taos:[transform:translate3d(0,200px,0)_scale(0.6)] taos:opacity-0" data-taos-offset="300"
         id="quotes"
       >
         <h1 class="font-bold text-4xl">
@@ -108,16 +109,16 @@
       </div>
 
       <section id="education" class="text">
-        <h1 class="pt-12 ml-12 sm:ml-24 font-bold text-4xl">Education</h1>
-        <div style="margin-top: 20px;">
-          <ul class="pt-12 ml-12 sm:ml-24 lg:py-4 font-semibold">
+        <h1 class="pt-12 ml-auto sm:ml-24 font-bold text-4xl">Education</h1>
+        <div class="mt-8 mx-auto">
+          <ul class="pt-12 ml-auto sm:ml-24 lg:py-4 font-semibold">
             <li class="text-xl" style="list-style-type: disc;">
               Bachelor of Information Technology Education at <a class="text-blue-800 hover:text-black" href="https://filkom.ub.ac.id/">Brawijaya University</a>
               <h1 class="pt-4">Final GPA: 3.62/4.00 (144 credits)</h1>
               <p class="pt-2">Experienced in Web Development, Data Science, and Business Intelligence</p>
             </li>
 
-            <ul class="pt-12 ml-12 sm:ml-24 lg:py-4 font-semibold">
+            <ul class="pt-12 ml-auto sm:ml-24 lg:py-4 font-semibold">
               <li class="text-xl" style="list-style-type: disc;">Actively participated in the faculty student organization, BEM FILKOM UB for 3 periods</li>
               <li class="text-xl" style="list-style-type: disc;">Engaged in a faculty-level sports organization, BIOS FILKOM UB for 1 period</li>
               <li class="text-xl" style="list-style-type: disc;">Took part in various faculty-level event committees</li>
@@ -130,11 +131,11 @@
       </section>
 
       <section id="experience" class="bg-gray-200">
-        <h1 class="pt-12 sm:ml-24 font-bold text-4xl">Work Experiences</h1>
-        <div class="justify-center py-16 flex flex-wrap">
+        <h1 class="pt-12 ml-auto sm:ml-24 font-bold text-4xl">Work Experiences</h1>
+        <div class="justify-center py-20 flex flex-wrap mx-auto">
 
           <div
-            class="card bg-black w-96 sm:w-60 sm:h-96 sm:mr-12 mb-12 text-white p-5 hover:bg-blue-800 transition duration-300"
+            class="card bg-black w-96 sm:w-60 sm:h-96 sm:mr-12 mb-16 text-white p-5 hover:bg-blue-800 transition duration-300"
           >
             <h4>August 2025 - Present</h4>
             <h1 class="text-xl font-bold pt-8">Associate of the CEO of the Branch</h1>
@@ -200,11 +201,11 @@
       </section>
 
       <section id="organizations" class="bg-gray-200">
-        <h1 class="pt-12 sm:ml-24 font-bold text-4xl">Organizational Experiences</h1>
-        <div class="justify-center py-16 flex flex-wrap">
+        <h1 class="pt-12 ml-auto sm:ml-24 font-bold text-4xl">Organizational Experiences</h1>
+        <div class="justify-center py-20 flex flex-wrap mx-auto">
 
           <div
-            class="card bg-gray-400 w-96 sm:w-60 sm:h-96 sm:mr-12 mb-12 text-black p-5 hover:text-white hover:bg-blue-800 transition duration-300"
+            class="card bg-gray-400 w-96 sm:w-60 sm:h-96 sm:mr-12 mb-16 text-black p-5 hover:text-white hover:bg-blue-800 transition duration-300"
           >
             <h4>January 2024 - January 2025</h4>
             <h1 class="text-xl font-bold pt-8">President</h1>
@@ -261,13 +262,13 @@
       </section>
 
       <section id="volunteering" class="bg-gray-200">
-        <div style="display: flex; justify-content: left; margin-top: -135px;">
-          <div style="margin-top: 80px">
-            <h2 class="pt-12 ml-12 sm:ml-24 font-bold text-4xl">
+        <div class="flex justify-start mx-auto mt-[-135px] mb-20">
+          <div class="mt-[80px]">
+            <h2 class="pt-12 ml-auto sm:ml-24 font-bold text-4xl">
               Volunteering & Other Experiences
             </h2>
-            <div style="margin-top: 20px; margin-bottom: 40px;">
-              <ul class="pt-12 ml-12 sm:ml-24 lg:py-4 font-semibold">
+            <div class="mt-5 mb-10">
+              <ul class="pt-12 ml-auto sm:ml-24 lg:py-4 font-semibold">
                 <li class="text-xl" style="list-style-type: disc;">Committee Member at <a href="https://www.instagram.com/pmc_indonesia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-blue-800 hover:text-white">Project Management Challenge</a> 2024</li>
                 <li class="text-xl" style="list-style-type: disc;">Usher at 12th International Symposium & Exhibition on Project Management (SYMEX 2024)</li>
                 <li class="text-xl" style="list-style-type: disc;">Deputy Head of the Events Division <a href="https://instagram.com/pk2maba_filkom?igshid=YmMyMTA2M2Y=" class="text-blue-800 hover:text-white">PKKMB & Startup Academy 2022</a></li>
@@ -289,8 +290,8 @@
       </section>
 
       <section id="works" class="bg-white">
-        <h1 class="pt-12 ml-12 sm:ml-24 font-bold text-4xl">Portfolio</h1>
-        <div class="mx-12 sm:mx-24 py-12">
+        <h1 class="pt-12 ml-auto sm:ml-24 font-bold text-4xl">Portfolio</h1>
+        <div class="mx-auto py-20 mt-16">
           <div>
             <h2 class="font-semibold sm:text-lg lg:text-xl sm:py-1 py-1 lg:py-4">
               Click here for details <a href="https://www.canva.com/design/DAGwniw_ONo/R_bwPVLHgq_odO6gKWakIw/view?utm_content=DAGwniw_ONo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb24ef35cba" target="_blank" rel="noopener noreferrer" class="text-blue-800 hover:text-white">
@@ -303,9 +304,9 @@
         </div>
       </section>
 
-      <footer class="bg-gray-200 w-full py-12" id="contact">
+      <footer class="bg-gray-200 w-full py-16" id="contact">
         <h1 class="text-2xl font-bold text-center">Get in Touch &hearts;</h1>
-        <div class="flex justify-center py-4">
+        <div class="flex justify-center py-6">
           <a href="https://www.instagram.com/dhikasat_/" target="_blank" rel="noopener noreferrer">
             <i class="bi bi-instagram text-xl px-2"></i>
           </a>
@@ -319,7 +320,7 @@
             <i class="bi bi-envelope text-xl px-2"></i>
           </a>
         </div>
-        <div class="pt-8">
+        <div class="pt-10">
           <p class="text-center text-sm font-semibold">
             &copy; Copyright 2024, Made with &#9826; Dhikasat
           </p>
@@ -328,6 +329,23 @@
 
     <script async src="https://unpkg.com/taos@1.0.2/dist/taos.js"></script>
     <script>
+      // Smooth scroll behavior
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+            // Close mobile menu if open
+            const menu = document.getElementById("menu");
+            if (menu && !menu.classList.contains('hidden')) {
+              menu.classList.add("hidden");
+              menu.classList.remove("w-full", "h-screen");
+            }
+          }
+        });
+      });
+
       var menu = document.getElementById("menu");
       function toggleMenu() {
         menu.classList.toggle("hidden");
